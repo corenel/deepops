@@ -12,9 +12,9 @@
 #mgmt01     ansible_host=10.0.0.1
 #mgmt02     ansible_host=10.0.0.2
 #mgmt03     ansible_host=10.0.0.3
-#login01    ansible_host=10.0.1.1
-#gpu01      ansible_host=10.0.2.1
-#gpu02      ansible_host=10.0.2.2
+login01     ansible_host=192.168.199.234
+node80      ansible_host=192.168.199.80
+node81      ansible_host=192.168.199.81
 
 ######
 # KUBERNETES
@@ -43,11 +43,11 @@ kube-node
 # SLURM
 ######
 [slurm-master]
-#login01
+login01
 
 [slurm-node]
-#gpu01
-#gpu02
+node80
+node81
 
 [slurm-cluster:children]
 slurm-master

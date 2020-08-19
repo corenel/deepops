@@ -7,7 +7,7 @@ slurm_version: 20.02.4
 slurm_install_prefix: /usr/local
 #slurm_user_home: /local/slurm
 slurm_manage_gpus: true
-#slurm_cluster_name: deepops
+slurm_cluster_name: csc101
 #slurm_username: slurm
 slurm_password: ReplaceWithASecurePasswordInTheVault
 #slurm_db_username: slurm
@@ -62,9 +62,9 @@ nfs_mounts:
 
 # Flags for enable/disable of NFS deployment
 #  - Set up an NFS server on nfs-server?
-slurm_enable_nfs_server: true
+slurm_enable_nfs_server: false
 #  - Mount NFS filesystems on nfs-clients?
-slurm_enable_nfs_client_nodes: true
+slurm_enable_nfs_client_nodes: false
 
 # Inventory host groups to use for NFS server or clients
 nfs_server_group: "slurm-master"
