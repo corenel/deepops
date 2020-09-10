@@ -36,6 +36,11 @@ pipeline {
             bash -x ./.jenkins-scripts/test-cluster-up.sh
           '''
 
+          echo "Get K8S Cluster Status"
+          sh '''
+            bash -x ./.jenkins-scripts/get-k8s-debug.sh
+          '''
+
           echo "Verify we can run a GPU job"
           sh '''
             timeout 500 bash -x ./.jenkins-scripts/run-gpu-job.sh
@@ -59,6 +64,11 @@ pipeline {
           echo "Test NFS"
           sh '''
             timeout 60 bash -x ./.jenkins-scripts/test-slurm-nfs-mount.sh
+          '''
+
+          echo "Test MPI"
+          sh '''
+            timeout 60 bash -x ./.jenkins-scripts/test-mpi-job.sh
           '''
         }
       }
