@@ -178,8 +178,8 @@ golang_gopath: /opt/go/packages
 ################################################################################
 # NIS configuration
 # Playbook: authentication
-# nis_domain: csc101.local
-# nis_server: 192.168.199.234
+nis_domain: csc101.local
+nis_server: provisioning-node.csc101.local
 
 # Kerberos configuration
 # Playbook: authentication

@@ -33,7 +33,7 @@
   when: slurm_enable_nfs_server
 - include: nfs-client.yml
   vars:
-    hostlist: "{{ nfs_client_group | default('slurm-node') }}"
+    hostlist: "{{ nfs_client_group | default('all') }}"
   when: slurm_enable_nfs_client_nodes
 
 # Install Slurm

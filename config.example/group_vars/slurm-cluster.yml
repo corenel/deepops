@@ -90,7 +90,7 @@ nfs_client_group: "slurm-cluster"
 slurm_install_lmod: true
 
 # Note: the sm_prefix must be in an NFS-shared location
-sm_prefix: "/sw"
+sm_prefix: "/public/sw"
 
 # Easybuild-specific
 sm_module_root: "{{ sm_prefix }}/modules"
@@ -112,7 +112,7 @@ spack_default_packages:
 ################################################################################
 # NVIDIA HPC SDK                                                               #
 ################################################################################
-slurm_install_hpcsdk: true
+slurm_install_hpcsdk: false
 hpcsdk_version: "2020_207"
 
 # In a Slurm cluster, default to setting up HPC SDK as modules rather than in
