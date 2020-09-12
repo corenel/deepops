@@ -62,7 +62,7 @@ nfs_mounts:
     options: async,vers=3
   - mountpoint: /public/experiments
     server: '172.16.0.197'
-    path: /volume1/sw
+    path: /volume1/experiments
     options: async,vers=3
   - mountpoint: /public/datasets
     server: '172.16.0.196'
