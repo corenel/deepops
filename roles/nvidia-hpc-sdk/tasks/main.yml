@@ -30,6 +30,7 @@
     url: "{{ hpcsdk_download_url }}"
     dest: "{{ hpcsdk_dest_download_path }}"
     mode: "0444"
+  environment: "{{proxy_env if proxy_env is defined else {}}}"
 
 - name: extract archive
   unarchive:

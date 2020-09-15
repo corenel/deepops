@@ -11,6 +11,7 @@
   tags:
     - vnc
   when: ansible_distribution == 'Ubuntu'
+  environment: "{{proxy_env if proxy_env is defined else {}}}"
 
 - name: install turbovnc
   yum:

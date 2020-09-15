@@ -96,12 +96,12 @@
   tags:
     - configure
 
-- name: create ssh key pair for default user
-  openssh_keypair:
-    path: "/home/{{ user }}/.ssh/id_rsa"
-    owner: "{{ user }}"
-  tags:
-    - configure
+#- name: create ssh key pair for default user
+#  openssh_keypair:
+#    path: "/home/{{ user }}/.ssh/id_rsa"
+#    owner: "{{ user }}"
+#  tags:
+#    - configure
 
 - name: get ssh pub key
   slurp:
