@@ -9,7 +9,7 @@ pmix_install_prefix: /opt/deepops/pmix
 hwloc_install_prefix: /opt/deepops/hwloc
 #slurm_user_home: /local/slurm
 slurm_manage_gpus: true
-slurm_cluster_name: aprillab
+slurm_cluster_name: csc101
 #slurm_username: slurm
 slurm_password: arWe_UK3JiXQzw8
 #slurm_db_username: slurm
@@ -116,7 +116,7 @@ spack_default_packages:
 ################################################################################
 # NVIDIA HPC SDK                                                               #
 ################################################################################
-slurm_install_hpcsdk: true
+slurm_install_hpcsdk: false
 hpcsdk_version: "2020_209"
 
 # In a Slurm cluster, default to setting up HPC SDK as modules rather than in
