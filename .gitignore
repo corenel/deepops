@@ -8,6 +8,7 @@
 /admin.conf
 /config*/
 !/config.example/
+!/config.huzhou/
 /roles/galaxy/
 /k8s-config/
 /kubectl

@@ -111,6 +111,7 @@
     extra_opts:
       - --strip-components=1
   when: slurm_build
+  environment: "{{proxy_env if proxy_env is defined else {}}}"
 
 - name: uninstall old version
   command: make -j uninstall
