@@ -57,24 +57,20 @@ nfs_exports:
     options: "*(rw,sync,no_root_squash)"
 nfs_mounts:
   - mountpoint: /home
-    server: '172.16.0.197'
+    server: '192.168.199.197'
     path: /volume1/users
     options: async,vers=3
   - mountpoint: /public/sw
-    server: '172.16.0.197'
+    server: '192.168.199.197'
     path: /volume1/sw
     options: async,vers=3
   - mountpoint: /public/experiments
-    server: '172.16.0.197'
+    server: '192.168.199.197'
     path: /volume1/experiments
     options: async,vers=3
   - mountpoint: /public/datasets
-    server: '172.16.0.196'
+    server: '192.168.199.196'
     path: /volume1/datasets
-    options: async,vers=3
-  - mountpoint: /public/shared
-    server: '172.16.0.196'
-    path: /volume1/shared
     options: async,vers=3
 
 # Flags for enable/disable of NFS deployment

@@ -16,6 +16,8 @@ login01     ansible_host=192.168.199.234
 node80      ansible_host=192.168.199.80
 node81      ansible_host=192.168.199.81
 node84      ansible_host=192.168.199.84
+node85      ansible_host=192.168.199.85
+node86      ansible_host=192.168.199.86
 
 ######
 # KUBERNETES
@@ -50,6 +52,8 @@ login01
 node80
 node81
 node84
+node85
+node86
 
 [slurm-cluster:children]
 slurm-master
