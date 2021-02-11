@@ -10,6 +10,7 @@
 !/config.example/
 !/config.huzhou/
 /roles/galaxy/
+/collections/*
 /k8s-config/
 /kubectl
 /tridentctl
