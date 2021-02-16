@@ -13,6 +13,8 @@
 #mgmt02     ansible_host=10.0.0.2
 #mgmt03     ansible_host=10.0.0.3
 login01     ansible_host=192.168.199.234
+node71      ansible_host=192.168.199.71
+node72      ansible_host=192.168.199.72
 node80      ansible_host=192.168.199.80
 node81      ansible_host=192.168.199.81
 node84      ansible_host=192.168.199.84
@@ -49,6 +51,8 @@ kube-node
 login01
 
 [slurm-node]
+node71
+node72
 node80
 node81
 node84
